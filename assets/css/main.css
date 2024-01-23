@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .logo h1 {
+  font-weight: 700;
+}
+header nav .logo h1 a {
+  text-decoration: none;
+  color: #FD5F00;
+}
+header nav .navigationNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+header nav .navigationNav ul li {
+  list-style: none;
+}
+header nav .navigationNav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header nav .toogleBtn {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+main #hero-sec {
+  width: 100%;
+  height: auto;
+}
+main #hero-sec .hero-sec-content {
+  width: 100%;
+  height: auto;
+}
+main #hero-sec .hero-sec-content img {
+  width: 100%;
+  height: auto;
+}
+main #hero-sec .row {
+  width: 100%;
+  padding: 0;
+}
+main #hero-sec .row .one-color {
+  background-color: #4E4E4E;
+}
+main #hero-sec .row .two-color {
+  background-color: #FD5F00;
+}
+main #hero-sec .row .sry-color {
+  background-color: #A23131;
+}
+main #hero-sec .row .hero-sec-text {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #fff;
+}
+main #hero-sec .row .hero-sec-text h2 {
+  color: #fff;
+}
+main #hero-sec .row .hero-sec-text p {
+  color: #808080;
+}
+main #product-sec {
+  width: 100%;
+}
+main #product-sec img {
+  width: 100%;
+}
+main #product-sec button {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+main #product-sec button:hover {
+  background-color: #000;
+}
+main #leader-sec .leader-sec-head {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+main #leader-sec .leader-sec-head h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+main #leader-sec .leader-sec-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 50px 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+main #leader-sec .leader-sec-cart h5 {
+  font-size: 14px;
+  color: gray;
+}
+main #leader-sec .leader-sec-cart img {
+  width: 100px;
+  border-radius: 50%;
+}
+main #leader-sec .leader-sec-cart .media-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main #leader-sec .leader-sec-cart .media-box .media-box-item {
+  background-color: #FD5F00;
+  border: 1px solid #FD5F00;
+  border-radius: 5px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #leader-sec .leader-sec-cart .media-box .media-box-item:hover {
+  background: transparent;
+  color: #FD5F00;
+}
+main #blog-sec .blog-sec-head {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+main #blog-sec .blog-sec-head h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+main #blog-sec .blog-cart img {
+  width: 100%;
+  border-radius: 5px;
+}
+main #blog-sec .blog-cart h5 {
+  font-size: 14px;
+}
+main #blog-sec .blog-cart a {
+  color: #FD5F00;
+  text-decoration: none;
+}
+main #blog-sec .blog-cart a:hover {
+  color: #b15821;
+}
+
+footer {
+  background-color: #333333;
+  padding: 50px 0;
+}
+footer h3 {
+  color: #fff;
+  font-size: 18px;
+}
+footer p {
+  color: #4E4E4E;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #4E4E4E;
+}
+footer ul li a:hover {
+  color: #FFF;
+}
+footer .media-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: gray;
+}
+footer .media-box i:hover {
+  color: #FFF;
+}
+footer .footer-text {
+  border-top: 1px solid #4E4E4E;
+}
+footer .footer-text p {
+  color: #4E4E4E;
+  padding: 40px 0;
+  text-align: center;
+}
+footer .footer-text p a {
+  color: #4E4E4E;
+}
+footer .footer-text p a:hover {
+  color: #fff;
+}
+footer .search-box {
+  position: relative;
+}
+footer .search-box input {
+  padding: 10px;
+  border: none;
+}
+footer .search-box button {
+  position: absolute;
+  padding: 10px 20px;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #FD5F00;
+  color: #fff;
+}
+footer .search-box button:hover {
+  background-color: #943900;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+    z-index: 6;
+  }
+  header nav .logo h1 {
+    font-size: 27px;
+  }
+  header nav .navigationNav ul {
+    display: none;
+  }
+  header nav .navigationNav .navbarDropdown {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    display: block;
+    background-color: #fff;
+    width: 80%;
+    padding: 30px;
+  }
+  header nav .toogleBtn {
+    display: block;
+  }
+  header nav .toogleBtn button {
+    padding: 7px 10px;
+  }
+  main #hero-sec .row .hero-sec-text h2 {
+    font-size: 23px;
+  }
+  main #hero-sec .row .hero-sec-text p {
+    font-size: 14px;
+  }
+  main #leader-sec .leader-sec-head {
+    width: 100%;
+  }
+  main #leader-sec .leader-sec-head h1 {
+    font-size: 28px;
+  }
+  main #leader-sec .leader-sec-head p {
+    font-size: 14px;
+  }
+  main #blog-sec .blog-sec-head {
+    width: 100%;
+  }
+  main #blog-sec .blog-sec-head h1 {
+    font-size: 28px;
+  }
+  main #blog-sec .blog-sec-head p {
+    font-size: 12px;
+  }
+  main #blog-sec .blog-cart h2 {
+    font-size: 28px;
+  }
+  main #blog-sec .blog-cart p {
+    font-size: 12px;
+  }
+  footer .search-box button {
+    padding: 5px 6px;
+  }
+  footer .search-box input {
+    width: 150px;
+    padding: 5px;
+  }
+}
+main #form-sec {
+  background-image: url(/assets/media/bg-form.png);
+  background-size: cover;
+  width: 100%;
+  min-height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #form-sec form {
+  width: 300px;
+  height: 400px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+main #form-sec form input {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+main #form-sec form input::placeholder {
+  color: #fff;
+}
+main #form-sec form button {
+  padding: 10px 20px;
+  background-color: #faf600;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+}
+main #form-sec form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+main #table-sec {
+  width: 100%;
+}
+main #table-sec table {
+  width: 60%;
+  margin: auto;
+  border: 1px solid gray;
+}
+main #table-sec table tr {
+  border: 1px solid gray;
+}
+main #table-sec table tr td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+main #table-sec table tr th {
+  border: 1px solid gray;
+  padding: 10px;
+}
+main #table-sec table button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+main #table-sec table button:hover {
+  background-color: black;
+}
+main #table-sec .btn-box {
+  width: 60%;
+  margin: auto;
+}
+main #table-sec .btn-box button {
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+}
+main #table-sec .btn-box button:hover {
+  background-color: #000;
+}
+main #table-sec .search-box {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+main #table-sec .search-box button {
+  background-color: red;
+  color: #fff;
+  border-bottom-right-radius: 35px;
+  border-top-right-radius: 35px;
+  padding: 10px 20px;
+}
+main #table-sec .search-box input {
+  padding: 10px 20px;
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+}

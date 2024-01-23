@@ -1,0 +1,105 @@
+main{
+    #form-sec{
+        background-image: url(/assets/media/bg-form.png);
+        background-size: cover;
+        width: 100%;
+        min-height: 540px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       form{
+        width: 300px;
+        height: 400px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        input{
+            padding: 10px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #faf600;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+       }
+    }
+    #table-sec{
+        width: 100%;
+        table{
+            width: 60%;
+            margin: auto;
+            border: 1px solid gray;
+            tr{
+            border: 1px solid gray;
+            td{
+            border: 1px solid gray;
+            padding: 10px;
+            }
+            th{
+            border: 1px solid gray;
+            padding: 10px;
+            }
+            }
+            button{
+                background-color: red;
+                color: #fff;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: black;
+                }
+            }
+        }
+        .btn-box{
+            width: 60%;
+            margin: auto;
+            button{
+                border: none;
+                border-radius:5px;
+                background-color: red;
+                color: #fff;
+                padding: 10px 20px;
+                &:hover{
+                    background-color: #000;
+                }
+            }
+        }
+        .search-box{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            button{
+                background-color: red;
+                color: #fff;
+                border-bottom-right-radius:35px;
+                border-top-right-radius:35px;
+                padding: 10px 20px;
+            }
+            input{
+                padding: 10px 20px;
+                border-bottom-left-radius: 35px;
+                border-top-left-radius: 35px;
+            }
+        }
+    }
+}
